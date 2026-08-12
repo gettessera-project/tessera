@@ -30,11 +30,18 @@ add_library(tessera_wallet STATIC EXCLUDE_FROM_ALL
   walletdb.cpp
   walletutil.cpp
 )
+# Locate SQLite rather than naming the library bare. A bare "sqlite3" links
+# on a native build only because the header happens to sit in the default
+# include path; a cross-build has no such luck and fails on sqlite3.h.
+find_path(SQLite3_INCLUDE_DIR NAMES sqlite3.h REQUIRED)
+find_library(SQLite3_LIBRARY NAMES sqlite3 REQUIRED)
+
 target_link_libraries(tessera_wallet
   PRIVATE
     core_interface
     tessera_common
-    sqlite3
+    ${SQLite3_LIBRARY}
     univalue
     Boost::headers
 )
+target_include_directories(tessera_wallet PRIVATE ${SQLite3_INCLUDE_DIR})
