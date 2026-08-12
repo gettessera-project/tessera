@@ -19,3 +19,9 @@ find_package_handle_standard_args(ZeroMQ
 
 add_library(zeromq INTERFACE IMPORTED)
 target_link_libraries(zeromq INTERFACE PkgConfig::libzmq)
+
+if(WIN32)
+  # Without this, zmq.h declares its functions __declspec(dllimport) and the
+  # link fails on __imp_zmq_* against the static library that depends builds.
+  target_compile_definitions(zeromq INTERFACE ZMQ_STATIC)
+endif()
