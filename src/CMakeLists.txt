@@ -229,6 +229,10 @@ target_link_libraries(tessera_node
     leveldb
     minisketch
     univalue
+  # Public: txmempool.h includes <boost/multi_index/...>, so every consumer of
+  # this library's headers needs the include path too. As PRIVATE it only ever
+  # worked because the host keeps Boost in a default search path.
+  PUBLIC
     Boost::headers
 )
 
