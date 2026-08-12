@@ -154,6 +154,14 @@ if(WIN32)
     target_compile_definitions(core_interface INTERFACE WIN32_LEAN_AND_MEAN NOMINMAX WIN32)
 endif()
 
+if(MINGW)
+    # Link the toolchain runtime in. Without this the executables ask Windows
+    # for libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll and
+    # libssp-0.dll, none of which a stock Windows machine has, so a released
+    # binary fails to start with a missing-DLL box.
+    target_link_options(core_interface INTERFACE -static)
+endif()
+
 # ---------------------------------------------------------------------------
 # Warning flags — warn_interface (linked into core_interface), each tested for
 # support via try_append_cxx_flags so toolchain-specific flags (e.g. the
