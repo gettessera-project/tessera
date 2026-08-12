@@ -3,6 +3,8 @@
 
 #include <util/exception.h>
 
+#include <clientversion.h>
+
 #include <tinyformat.h>
 #include <util/log.h>
 
@@ -21,7 +23,7 @@ static std::string FormatException(const std::exception* pex, std::string_view t
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "bitcoin";
+    const char* pszModule = CLIENT_NAME;
 #endif
     if (pex)
         return strprintf(
