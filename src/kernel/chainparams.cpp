@@ -159,8 +159,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256{"c6360e1eed547b847a7b71d35ba209eafe6f24af5f33142c5ee9006b4e83978a"});
 
         vSeeds.clear();
-        // DNS seeds — queried for peer addresses on first start. Subdomains, so
-        // the apex domains stay free for the project sites.
+        // DNS seeds — queried for peer addresses on first start. A subdomain, so
+        // the apex stays free for the project site; it must resolve directly to
+        // node addresses, which means it cannot sit behind a CDN proxy.
+        vSeeds.emplace_back("seed.gettessera.org.");
+        // No fixed seeds: the hardcoded address list is generated from a running
+        // network, and there is not one yet.
         vFixedSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
