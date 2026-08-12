@@ -16,7 +16,7 @@ The binaries are produced under `build/bin/`.
 Toolchain requirements
 ----------------------
 
-Tessera is written in **C++26**, so a recent compiler is required:
+Tessera is written in **C++20**, so a reasonably recent compiler is required:
 
 - GCC 14 or newer, or
 - Clang 19 or newer

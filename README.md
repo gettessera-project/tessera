@@ -64,7 +64,7 @@ few minutes per block until the difficulty finds its level.
 
 ## Building
 
-CMake and a C++26 compiler (GCC ≥ 14 or Clang ≥ 19). Per-platform instructions
+CMake and a C++20 compiler (GCC ≥ 12 or Clang ≥ 15). Per-platform instructions
 and the dependency list are in [`doc/build-unix.md`](doc/build-unix.md),
 [`doc/build-windows.md`](doc/build-windows.md) and
 [`doc/dependencies.md`](doc/dependencies.md).

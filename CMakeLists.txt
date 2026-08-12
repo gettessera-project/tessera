@@ -7,7 +7,7 @@
 # library/target decomposition to src/CMakeLists.txt (consensus / crypto / util
 # / common / node / wallet / cli libraries, sharing flags via core_interface).
 #
-# Consensus core in C++26: SHA3-256 hashing, SHA3-256d proof-of-work,
+# Consensus core in C++20: SHA3-256 hashing, SHA3-256d proof-of-work,
 # vendored ML-DSA-44 signatures (src/ML-DSA-44, PQClean/FIPS 204), and the UTXO +
 # validation stack.
 
@@ -24,7 +24,7 @@ project(tessera
 # GenerateBuildInfo script).
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake ${CMAKE_SOURCE_DIR}/cmake/module)
 
-set(CMAKE_CXX_STANDARD 26)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_C_STANDARD 11)

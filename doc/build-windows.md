@@ -21,7 +21,7 @@ pacman -S --needed \
     mingw-w64-x86_64-sqlite3
 ```
 
-Tessera requires a **C++26** compiler; the `mingw-w64-x86_64-gcc` package is
+Tessera requires a **C++20** compiler; the `mingw-w64-x86_64-gcc` package is
 recent enough. The vendored libraries (LevelDB, crc32c, minisketch, univalue,
 ML-DSA-44/ML-KEM-768) are built from the source tree and need not be
 installed.

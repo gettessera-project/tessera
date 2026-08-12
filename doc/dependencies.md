@@ -10,7 +10,7 @@ installation.
 
 ## Compiler
 
-Tessera is written in C++26 and requires one of the following compilers.
+Tessera is written in C++20 and requires one of the following compilers.
 
 | Toolchain | Minimum required |
 | --- | --- |
