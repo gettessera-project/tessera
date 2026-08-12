@@ -1,0 +1,33 @@
+# /etc/conf.d/tesserad: config file for /etc/init.d/tesserad
+
+# Config file location
+#TESSERAD_CONFIGFILE="/etc/tessera/tessera.conf"
+
+# What directory to write pidfile to?  (created and owned by $TESSERAD_USER)
+#TESSERAD_PIDDIR="/var/run/tesserad"
+
+# What filename to give the pidfile
+#TESSERAD_PIDFILE="${TESSERAD_PIDDIR}/tesserad.pid"
+
+# Where to write tesserad data (be mindful that the blockchain is large)
+#TESSERAD_DATADIR="/var/lib/tesserad"
+
+# User and group to own tesserad process
+#TESSERAD_USER="tessera"
+#TESSERAD_GROUP="tessera"
+
+# Path to tesserad executable
+#TESSERAD_BIN="/usr/bin/tesserad"
+
+# Nice value to run tesserad under
+#TESSERAD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#TESSERAD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for tesserad to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+TESSERAD_SIGTERM_TIMEOUT=600

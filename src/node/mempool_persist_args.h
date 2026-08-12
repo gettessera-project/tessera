@@ -1,0 +1,24 @@
+// Copyright (c) 2026 tessera core
+// See COPYING for license.
+
+#ifndef TESSERA_NODE_MEMPOOL_PERSIST_ARGS_H
+#define TESSERA_NODE_MEMPOOL_PERSIST_ARGS_H
+
+#include <util/fs.h>
+
+class ArgsManager;
+
+namespace node {
+
+/**
+ * Default for -persistmempool, indicating whether the node should attempt to
+ * automatically load the mempool on start and save to disk on shutdown
+ */
+static constexpr bool DEFAULT_PERSIST_MEMPOOL{true};
+
+bool ShouldPersistMempool(const ArgsManager& argsman);
+fs::path MempoolPath(const ArgsManager& argsman);
+
+} // namespace node
+
+#endif // TESSERA_NODE_MEMPOOL_PERSIST_ARGS_H

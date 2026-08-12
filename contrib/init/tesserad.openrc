@@ -1,0 +1,93 @@
+#!/sbin/openrc-run
+
+# backward compatibility for existing gentoo layout
+#
+if [ -d "/var/lib/tessera/.tessera" ]; then
+	TESSERAD_DEFAULT_DATADIR="/var/lib/tessera/.tessera"
+else
+	TESSERAD_DEFAULT_DATADIR="/var/lib/tesserad"
+fi
+
+TESSERAD_CONFIGFILE=${TESSERAD_CONFIGFILE:-/etc/tessera/tessera.conf}
+TESSERAD_PIDDIR=${TESSERAD_PIDDIR:-/var/run/tesserad}
+TESSERAD_PIDFILE=${TESSERAD_PIDFILE:-${TESSERAD_PIDDIR}/tesserad.pid}
+TESSERAD_DATADIR=${TESSERAD_DATADIR:-${TESSERAD_DEFAULT_DATADIR}}
+TESSERAD_USER=${TESSERAD_USER:-${TESSERA_USER:-tessera}}
+TESSERAD_GROUP=${TESSERAD_GROUP:-tessera}
+TESSERAD_BIN=${TESSERAD_BIN:-/usr/bin/tesserad}
+TESSERAD_NICE=${TESSERAD_NICE:-${NICELEVEL:-0}}
+TESSERAD_OPTS="${TESSERAD_OPTS:-${TESSERA_OPTS}}"
+
+name="Tessera Core Daemon"
+description="Tessera cryptocurrency P2P network daemon"
+
+command="/usr/bin/tesserad"
+command_args="-pid=\"${TESSERAD_PIDFILE}\" \
+		-conf=\"${TESSERAD_CONFIGFILE}\" \
+		-datadir=\"${TESSERAD_DATADIR}\" \
+		-daemon \
+		${TESSERAD_OPTS}"
+
+required_files="${TESSERAD_CONFIGFILE}"
+start_stop_daemon_args="-u ${TESSERAD_USER} \
+			-N ${TESSERAD_NICE} -w 2000"
+pidfile="${TESSERAD_PIDFILE}"
+
+# The retry schedule to use when stopping the daemon. Could be either
+# a timeout in seconds or multiple signal/timeout pairs (like
+# "SIGKILL/180 SIGTERM/300")
+retry="${TESSERAD_SIGTERM_TIMEOUT}"
+
+depend() {
+	need localmount net
+}
+
+# verify
+# 1) that the datadir exists and is writable (or create it)
+# 2) that a directory for the pid exists and is writable
+# 3) ownership and permissions on the config file
+start_pre() {
+	checkpath \
+	-d \
+	--mode 0750 \
+	--owner "${TESSERAD_USER}:${TESSERAD_GROUP}" \
+	"${TESSERAD_DATADIR}"
+
+	checkpath \
+	-d \
+	--mode 0755 \
+	--owner "${TESSERAD_USER}:${TESSERAD_GROUP}" \
+	"${TESSERAD_PIDDIR}"
+
+	checkpath -f \
+	-o "${TESSERAD_USER}:${TESSERAD_GROUP}" \
+	-m 0660 \
+	"${TESSERAD_CONFIGFILE}"
+
+	checkconfig || return 1
+}
+
+checkconfig()
+{
+	if grep -qs '^rpcuser=' "${TESSERAD_CONFIGFILE}" && \
+		! grep -qs '^rpcpassword=' "${TESSERAD_CONFIGFILE}" ; then
+		eerror ""
+		eerror "ERROR: You must set a secure rpcpassword to run tesserad."
+		eerror "The setting must appear in ${TESSERAD_CONFIGFILE}"
+		eerror ""
+		eerror "This password is security critical to securing wallets "
+		eerror "and must not be the same as the rpcuser setting."
+		eerror "You can generate a suitable random password using the following "
+		eerror "command from the shell:"
+		eerror ""
+		eerror "bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'"
+		eerror ""
+		eerror "It is recommended that you also set alertnotify so you are "
+		eerror "notified of problems:"
+		eerror ""
+		eerror "ie: alertnotify=echo %%s | mail -s \"Tessera Alert\"" \
+			"admin@foo.com"
+		eerror ""
+		return 1
+	fi
+}
