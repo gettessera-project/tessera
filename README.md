@@ -42,9 +42,9 @@ signature scheme is free.
 
 ## Status
 
-**Not launched.** The genesis blocks are mined and the parameters are fixed, but
-no public network is running yet. Consensus rules may still change before launch;
-after it, they will not.
+**Mainnet started 12 August 2026.** Genesis is mined and the parameters are fixed.
+The network is young and thinly connected; consensus rules may still change while
+it has little weight behind it, and after that they will not.
 
 The chain begins at **difficulty 1** — the same target Bitcoin's genesis used —
 so an ordinary CPU can mine from the first block. On a modern desktop that is a

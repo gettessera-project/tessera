@@ -37,6 +37,11 @@
   h1{margin:0; font-size:40px; letter-spacing:-.02em}
   .tag{margin:6px 0 0; color:var(--dim); font-size:17px}
   .lede{margin:30px 0 0; font-size:19px; line-height:1.6}
+  .links{margin:28px 0 0; display:flex; gap:10px; flex-wrap:wrap}
+  .links a{display:inline-block; padding:8px 16px; border-radius:8px;
+           border:1px solid var(--line); background:var(--panel); color:var(--ink);
+           font-size:14.5px; text-decoration:none}
+  .links a:hover{border-color:var(--gold); color:var(--gold); text-decoration:none}
   .status{display:inline-block; margin-top:26px; padding:7px 14px; border-radius:999px;
           border:1px solid #3a2f10; background:#1a1608; color:var(--gold); font-size:13.5px}
 
@@ -106,7 +111,13 @@
       code in the tree at all.
     </p>
 
-    <span class="status">Not launched — genesis mined, network not yet running</span>
+    <span class="status">Mainnet started 12 August 2026 — difficulty 1, CPU mineable</span>
+
+    <p class="links">
+      <a href="https://github.com/gettessera-project/tessera">GitHub</a>
+      <a href="https://discord.gg/trFG8BD3w">Discord</a>
+      <a href="#download">Download</a>
+    </p>
   </div>
 </header>
 
@@ -185,7 +196,7 @@ tessera-miner -address=&lt;your address&gt;     # mine to a running tesserad</co
 
 <section>
   <div class="wrap">
-    <h2>Download</h2>
+    <h2 id="download">Download</h2>
     <p>
       Version 0.1.0. Both archives carry every binary — node, CLI, GUI wallet,
       CPU miner and the offline tools — and nothing needs installing: unpack and
@@ -254,6 +265,7 @@ ctest --test-dir build</code></pre>
     <p>
       Source and issues:
       <a href="https://github.com/gettessera-project/tessera">github.com/gettessera-project/tessera</a>
+      · Chat: <a href="https://discord.gg/trFG8BD3w">Discord</a>
       · MIT licensed.
     </p>
     <p>
