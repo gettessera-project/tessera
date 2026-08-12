@@ -1463,7 +1463,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="133" />
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Tessera network, as detailed below.</source>
-        <translation>സമീപകാല ഇടപാടുകൾ ഇതുവരെ ദൃശ്യമായേക്കില്ല, അതിനാൽ നിങ്ങളുടെ വാലറ്റിന്റെ ബാലൻസ് തെറ്റായിരിക്കാം. താഴെ വിശദമാക്കിയിരിക്കുന്നതുപോലെ, നിങ്ങളുടെ വാലറ്റ് ബിറ്റ്കോയിൻ നെറ്റ്‌വർക്കുമായി സമന്വയിപ്പിക്കൽ പൂർത്തിയാക്കിയാൽ ഈ വിവരം ശരിയാകും.</translation>
+        <translation>സമീപകാല ഇടപാടുകൾ ഇതുവരെ ദൃശ്യമായേക്കില്ല, അതിനാൽ നിങ്ങളുടെ വാലറ്റിന്റെ ബാലൻസ് തെറ്റായിരിക്കാം. താഴെ വിശദമാക്കിയിരിക്കുന്നതുപോലെ, നിങ്ങളുടെ വാലറ്റ് Tessera നെറ്റ്‌വർക്കുമായി സമന്വയിപ്പിക്കൽ പൂർത്തിയാക്കിയാൽ ഈ വിവരം ശരിയാകും.</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />

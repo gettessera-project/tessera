@@ -214,7 +214,7 @@
     <message>
         <location filename="../askpassphrasedialog.cpp" line="105" />
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TESSERAS&lt;/b&gt;!</source>
-        <translation>انتباہ: اگر آپ اپنا والیٹ خفیہ کرتے ہیں اور اپنا پاس فریز کھو دیتے ہیں، تو آپ &lt;b&gt;اپنے تمام فلو کوائنز کھو دیں گے&lt;/b&gt;!</translation>
+        <translation>انتباہ: اگر آپ اپنا والیٹ خفیہ کرتے ہیں اور اپنا پاس فریز کھو دیتے ہیں، تو آپ &lt;b&gt;اپنے تمام سکے کھو دیں گے&lt;/b&gt;!</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="105" />
@@ -235,7 +235,7 @@
     <message>
         <location filename="../askpassphrasedialog.cpp" line="115" />
         <source>Remember that encrypting your wallet cannot fully protect your tesseras from being stolen by malware infecting your computer.</source>
-        <translation>یاد رکھیں کہ والیٹ کو خفیہ کرنا آپ کے فلو کوائنز کو آپ کے کمپیوٹر کو متاثر کرنے والے میل ویئر کے ذریعے چوری ہونے سے مکمل طور پر محفوظ نہیں رکھ سکتا۔</translation>
+        <translation>یاد رکھیں کہ والیٹ کو خفیہ کرنا آپ کے سکے کو آپ کے کمپیوٹر کو متاثر کرنے والے میل ویئر کے ذریعے چوری ہونے سے مکمل طور پر محفوظ نہیں رکھ سکتا۔</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="120" />
@@ -3841,7 +3841,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="173" />
         <source>The fee will be deducted from the amount being sent. The recipient will receive less tesseras than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>فیس بھیجی جانے والی رقم سے کاٹی جائے گی۔ وصول کنندہ کو رقم کے خانے میں آپ کی درج کردہ رقم سے کم فلو کوائنز ملیں گے۔ اگر متعدد وصول کنندگان منتخب ہوں، تو فیس برابر تقسیم ہو جاتی ہے۔</translation>
+        <translation>فیس بھیجی جانے والی رقم سے کاٹی جائے گی۔ وصول کنندہ کو رقم کے خانے میں آپ کی درج کردہ رقم سے کم سکے ملیں گے۔ اگر متعدد وصول کنندگان منتخب ہوں، تو فیس برابر تقسیم ہو جاتی ہے۔</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="176" />
@@ -3905,7 +3905,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="33" />
         <source>You can sign messages/agreements with your addresses to prove you can receive tesseras sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>آپ اپنے پتوں کے ساتھ پیغامات/معاہدوں پر دستخط کر سکتے ہیں تاکہ یہ ثابت کر سکیں کہ آپ ان پر بھیجے گئے فلو کوائنز وصول کر سکتے ہیں۔ خیال رکھیں کہ کسی مبہم یا بے ترتیب چیز پر دستخط نہ کریں، کیونکہ فشنگ حملے آپ کو دھوکہ دے کر آپ کی شناخت ان کے نام دستخط کروانے کی کوشش کر سکتے ہیں۔ صرف ان مکمل تفصیلی بیانات پر دستخط کریں جن سے آپ متفق ہوں۔</translation>
+        <translation>آپ اپنے پتوں کے ساتھ پیغامات/معاہدوں پر دستخط کر سکتے ہیں تاکہ یہ ثابت کر سکیں کہ آپ ان پر بھیجے گئے سکے وصول کر سکتے ہیں۔ خیال رکھیں کہ کسی مبہم یا بے ترتیب چیز پر دستخط نہ کریں، کیونکہ فشنگ حملے آپ کو دھوکہ دے کر آپ کی شناخت ان کے نام دستخط کروانے کی کوشش کر سکتے ہیں۔ صرف ان مکمل تفصیلی بیانات پر دستخط کریں جن سے آپ متفق ہوں۔</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="51" />

@@ -1453,7 +1453,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="133" />
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Tessera network, as detailed below.</source>
-        <translation>ธุรกรรมล่าสุดอาจยังไม่ปรากฏ และดังนั้นยอดคงเหลือในกระเป๋าเงินของคุณอาจไม่ถูกต้อง ข้อมูลนี้จะถูกต้องเมื่อกระเป๋าเงินของคุณซิงโครไนซ์กับเครือข่ายบิตคอยน์เสร็จสิ้น ตามรายละเอียดด้านล่าง</translation>
+        <translation>ธุรกรรมล่าสุดอาจยังไม่ปรากฏ และดังนั้นยอดคงเหลือในกระเป๋าเงินของคุณอาจไม่ถูกต้อง ข้อมูลนี้จะถูกต้องเมื่อกระเป๋าเงินของคุณซิงโครไนซ์กับเครือข่ายTesseraเสร็จสิ้น ตามรายละเอียดด้านล่าง</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />

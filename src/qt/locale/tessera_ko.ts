@@ -1461,7 +1461,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="133" />
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Tessera network, as detailed below.</source>
-        <translation>최근 거래가 아직 표시되지 않을 수 있으며, 따라서 지갑의 잔액이 부정확할 수 있습니다. 이 정보는 아래에 자세히 설명된 대로 지갑이 비트코인 네트워크와 동기화를 완료하면 정확해집니다.</translation>
+        <translation>최근 거래가 아직 표시되지 않을 수 있으며, 따라서 지갑의 잔액이 부정확할 수 있습니다. 이 정보는 아래에 자세히 설명된 대로 지갑이 Tessera 네트워크와 동기화를 완료하면 정확해집니다.</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />
@@ -3744,7 +3744,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../sendcoinsdialog.cpp" line="799" />
         <source>Warning: Invalid Tessera address</source>
-        <translation>경고: 유효하지 않은 비트코인 주소</translation>
+        <translation>경고: 유효하지 않은 Tessera 주소</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="804" />

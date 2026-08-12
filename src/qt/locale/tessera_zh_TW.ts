@@ -3752,7 +3752,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../sendcoinsdialog.cpp" line="799" />
         <source>Warning: Invalid Tessera address</source>
-        <translation>警告: 比特幣地址無效</translation>
+        <translation>警告: Tessera地址無效</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="804" />

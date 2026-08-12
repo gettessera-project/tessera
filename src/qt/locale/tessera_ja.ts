@@ -1469,7 +1469,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="133" />
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Tessera network, as detailed below.</source>
-        <translation>最近の取引はまだ表示されていない可能性があり、そのためウォレットの残高が正しくない場合があります。この情報は、以下に詳述するとおり、ウォレットがビットコインネットワークとの同期を完了すると正しくなります。</translation>
+        <translation>最近の取引はまだ表示されていない可能性があり、そのためウォレットの残高が正しくない場合があります。この情報は、以下に詳述するとおり、ウォレットがTesseraネットワークとの同期を完了すると正しくなります。</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />
@@ -3752,7 +3752,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../sendcoinsdialog.cpp" line="799" />
         <source>Warning: Invalid Tessera address</source>
-        <translation>警告: 無効なビットコインアドレス</translation>
+        <translation>警告: 無効なTesseraアドレス</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="804" />

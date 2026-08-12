@@ -1486,7 +1486,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />
         <source>Attempting to spend tesseras that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Попытки потратить флоукоины, затронутые ещё не отображёнными транзакциями, не будут приняты сетью.</translation>
+        <translation>Попытки потратить монеты, затронутые ещё не отображёнными транзакциями, не будут приняты сетью.</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="215" />

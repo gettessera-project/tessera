@@ -739,7 +739,7 @@
     <message>
         <location filename="../tesseragui.cpp" line="266" />
         <source>Send coins to a Tessera address</source>
-        <translation>ارسال سکه به یک آدرس فلوکوین</translation>
+        <translation>ارسال سکه به یک آدرس Tessera</translation>
     </message>
     <message>
         <location filename="../tesseragui.cpp" line="272" />
@@ -844,7 +844,7 @@
     <message>
         <location filename="../tesseragui.cpp" line="323" />
         <source>Sign messages with your Tessera addresses to prove you own them</source>
-        <translation>پیام‌ها را با آدرس‌های فلوکوین خود امضا کنید تا مالکیت آن‌ها را اثبات نمایید</translation>
+        <translation>پیام‌ها را با آدرس‌های Tessera خود امضا کنید تا مالکیت آن‌ها را اثبات نمایید</translation>
     </message>
     <message>
         <location filename="../tesseragui.cpp" line="324" />
@@ -854,7 +854,7 @@
     <message>
         <location filename="../tesseragui.cpp" line="325" />
         <source>Verify messages to ensure they were signed with specified Tessera addresses</source>
-        <translation>راستی‌آزمایی پیام‌ها برای اطمینان از این‌که با آدرس‌های فلوکوین مشخص‌شده امضا شده‌اند</translation>
+        <translation>راستی‌آزمایی پیام‌ها برای اطمینان از این‌که با آدرس‌های Tessera مشخص‌شده امضا شده‌اند</translation>
     </message>
     <message>
         <location filename="../tesseragui.cpp" line="327" />
@@ -944,7 +944,7 @@
     <message>
         <location filename="../tesseragui.cpp" line="360" />
         <source>Show the %1 help message to get a list with possible Tessera command-line options</source>
-        <translation>نمایش پیام راهنمای %1 برای دریافت فهرستی از گزینه‌های ممکن خط فرمان فلوکوین</translation>
+        <translation>نمایش پیام راهنمای %1 برای دریافت فهرستی از گزینه‌های ممکن خط فرمان Tessera</translation>
     </message>
     <message>
         <location filename="../tesseragui.cpp" line="362" />
@@ -1031,7 +1031,7 @@
         <source>%n active connection(s) to Tessera network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation>
-            <numerusform>%n اتصال فعال به شبکه فلوکوین.</numerusform>
+            <numerusform>%n اتصال فعال به شبکه Tessera.</numerusform>
         </translation>
     </message>
     <message>
@@ -1424,7 +1424,7 @@
     <message>
         <location filename="../intro.cpp" line="313" />
         <source>%1 will download and store a copy of the Tessera block chain.</source>
-        <translation>%1 یک نسخه از زنجیره بلوک فلوکوین را دانلود و ذخیره خواهد کرد.</translation>
+        <translation>%1 یک نسخه از زنجیره بلوک Tessera را دانلود و ذخیره خواهد کرد.</translation>
     </message>
     <message>
         <location filename="../intro.cpp" line="315" />
@@ -1457,12 +1457,12 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="133" />
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Tessera network, as detailed below.</source>
-        <translation>تراکنش‌های اخیر ممکن است هنوز قابل مشاهده نباشند و بنابراین موجودی کیف پول شما ممکن است نادرست باشد. این اطلاعات پس از این‌که کیف پول شما همگام‌سازی با شبکه بیت‌کوین را به پایان برساند، همان‌گونه که در زیر شرح داده شده است، درست خواهد بود.</translation>
+        <translation>تراکنش‌های اخیر ممکن است هنوز قابل مشاهده نباشند و بنابراین موجودی کیف پول شما ممکن است نادرست باشد. این اطلاعات پس از این‌که کیف پول شما همگام‌سازی با شبکه Tessera را به پایان برساند، همان‌گونه که در زیر شرح داده شده است، درست خواهد بود.</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />
         <source>Attempting to spend tesseras that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>تلاش برای خرج‌کردن فلوکوین‌هایی که تحت تأثیر تراکنش‌های هنوز نمایش‌داده‌نشده هستند، توسط شبکه پذیرفته نخواهد شد.</translation>
+        <translation>تلاش برای خرج‌کردن سکه‌هایی که تحت تأثیر تراکنش‌های هنوز نمایش‌داده‌نشده هستند، توسط شبکه پذیرفته نخواهد شد.</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="215" />
@@ -1735,7 +1735,7 @@
     <message>
         <location filename="../forms/optionsdialog.ui" line="321" />
         <source>Automatically open the Tessera client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation>خودکار باز کردن درگاه کلاینت فلوکوین روی روتر. این تنها زمانی کار می‌کند که روتر شما از PCP یا NAT-PMP پشتیبانی کند و فعال باشد. درگاه خارجی می‌تواند تصادفی باشد.</translation>
+        <translation>خودکار باز کردن درگاه کلاینت Tessera روی روتر. این تنها زمانی کار می‌کند که روتر شما از PCP یا NAT-PMP پشتیبانی کند و فعال باشد. درگاه خارجی می‌تواند تصادفی باشد.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="324" />
@@ -1755,7 +1755,7 @@
     <message>
         <location filename="../forms/optionsdialog.ui" line="341" />
         <source>Connect to the Tessera network through a SOCKS5 proxy.</source>
-        <translation>اتصال به شبکه فلوکوین از طریق یک پراکسی SOCKS5.</translation>
+        <translation>اتصال به شبکه Tessera از طریق یک پراکسی SOCKS5.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="344" />
@@ -1816,7 +1816,7 @@
     <message>
         <location filename="../forms/optionsdialog.ui" line="528" />
         <source>Connect to the Tessera network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation>اتصال به شبکه فلوکوین از طریق یک پراکسی SOCKS5 جداگانه برای سرویس‌های onion تور.</translation>
+        <translation>اتصال به شبکه Tessera از طریق یک پراکسی SOCKS5 جداگانه برای سرویس‌های onion تور.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="531" />
@@ -2042,7 +2042,7 @@
         <location filename="../forms/overviewpage.ui" line="76" />
         <location filename="../forms/overviewpage.ui" line="296" />
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tessera network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش‌داده‌شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به‌طور خودکار با شبکه فلوکوین همگام‌سازی می‌شود، اما این فرایند هنوز تکمیل نشده است.</translation>
+        <translation>اطلاعات نمایش‌داده‌شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به‌طور خودکار با شبکه Tessera همگام‌سازی می‌شود، اما این فرایند هنوز تکمیل نشده است.</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="120" />
@@ -2594,7 +2594,7 @@
     <message>
         <location filename="../forms/debugwindow.ui" line="282" />
         <source>Network addresses that your Tessera node is currently using to communicate with other nodes.</source>
-        <translation>آدرس‌های شبکه‌ای که گره فلوکوین شما در حال حاضر برای ارتباط با گره‌های دیگر از آن‌ها استفاده می‌کند.</translation>
+        <translation>آدرس‌های شبکه‌ای که گره Tessera شما در حال حاضر برای ارتباط با گره‌های دیگر از آن‌ها استفاده می‌کند.</translation>
     </message>
     <message>
         <location filename="../forms/debugwindow.ui" line="295" />
@@ -3740,7 +3740,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../sendcoinsdialog.cpp" line="799" />
         <source>Warning: Invalid Tessera address</source>
-        <translation>هشدار: نشانی بیت‌کوین نامعتبر</translation>
+        <translation>هشدار: نشانی Tessera نامعتبر</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="804" />

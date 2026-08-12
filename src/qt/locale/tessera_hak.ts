@@ -1469,7 +1469,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="133" />
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Tessera network, as detailed below.</source>
-        <translation>最近个交易可能還毋會顯示，所以你錢包个餘額可能毋啱。等你个錢包摎比特幣網路同步完成後，這兜資訊就會啱，詳情如下背所示。</translation>
+        <translation>最近个交易可能還毋會顯示，所以你錢包个餘額可能毋啱。等你个錢包摎Tessera網路同步完成後，這兜資訊就會啱，詳情如下背所示。</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />
@@ -3759,7 +3759,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../sendcoinsdialog.cpp" line="799" />
         <source>Warning: Invalid Tessera address</source>
-        <translation>警告：無效个比特幣地址</translation>
+        <translation>警告：無效个Tessera地址</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="804" />

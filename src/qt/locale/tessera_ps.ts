@@ -1472,7 +1472,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />
         <source>Attempting to spend tesseras that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>د هغو فلوکوینونو لګولو هڅه چې د تر اوسه نه ښودل شويو لیږدونو لخوا اغیزمن دي، د شبکې لخوا نه منل کیږي.</translation>
+        <translation>د هغو سکو لګولو هڅه چې د تر اوسه نه ښودل شويو لیږدونو لخوا اغیزمن دي، د شبکې لخوا نه منل کیږي.</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="215" />

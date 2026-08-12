@@ -1467,7 +1467,7 @@
     <message>
         <location filename="../forms/modaloverlay.ui" line="133" />
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Tessera network, as detailed below.</source>
-        <translation>ייתכן שהעברות אחרונות עדיין לא יהיו גלויות, ולכן יתרת הארנק שלך עשויה להיות שגויה. מידע זה יהיה נכון לאחר שהארנק שלך יסיים את הסנכרון עם רשת הביטקוין, כמפורט להלן.</translation>
+        <translation>ייתכן שהעברות אחרונות עדיין לא יהיו גלויות, ולכן יתרת הארנק שלך עשויה להיות שגויה. מידע זה יהיה נכון לאחר שהארנק שלך יסיים את הסנכרון עם רשת הTessera, כמפורט להלן.</translation>
     </message>
     <message>
         <location filename="../forms/modaloverlay.ui" line="152" />
@@ -3549,7 +3549,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="863" />
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for Tessera transactions than the network can process.</source>
-        <translation>כאשר נפח העסקאות קטן מהמקום בבלוקים, כורים וכן צמתים מעבירים עשויים לאכוף עמלה מינימלית. תשלום עמלה מינימלית זו בלבד הוא תקין לחלוטין, אך שים לב שזה עלול לגרום לעסקה שלעולם לא תאושר ברגע שיהיה ביקוש לעסקאות ביטקוין גדול ממה שהרשת יכולה לעבד.</translation>
+        <translation>כאשר נפח העסקאות קטן מהמקום בבלוקים, כורים וכן צמתים מעבירים עשויים לאכוף עמלה מינימלית. תשלום עמלה מינימלית זו בלבד הוא תקין לחלוטין, אך שים לב שזה עלול לגרום לעסקה שלעולם לא תאושר ברגע שיהיה ביקוש לעסקאות Tessera גדול ממה שהרשת יכולה לעבד.</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="866" />
@@ -3757,7 +3757,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <message>
         <location filename="../sendcoinsdialog.cpp" line="799" />
         <source>Warning: Invalid Tessera address</source>
-        <translation>אזהרה: כתובת ביטקוין לא תקפה</translation>
+        <translation>אזהרה: כתובת Tessera לא תקפה</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="804" />
