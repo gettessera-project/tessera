@@ -185,6 +185,51 @@ tessera-miner -address=&lt;your address&gt;     # mine to a running tesserad</co
 
 <section>
   <div class="wrap">
+    <h2>Download</h2>
+    <p>
+      Version 0.1.0. Both archives carry every binary — node, CLI, GUI wallet,
+      CPU miner and the offline tools — and nothing needs installing: unpack and
+      run.
+    </p>
+
+    <table>
+      <tr><th>Platform</th><th>File</th><th>Size</th></tr>
+      <tr>
+        <td>Windows x86-64</td>
+        <td><a href="/dl/tessera-0.1.0-win64.zip">tessera-0.1.0-win64.zip</a></td>
+        <td>34 MB</td>
+      </tr>
+      <tr>
+        <td>Linux x86-64</td>
+        <td><a href="/dl/tessera-0.1.0-x86_64-linux-gnu.tar.gz">tessera-0.1.0-x86_64-linux-gnu.tar.gz</a></td>
+        <td>30 MB</td>
+      </tr>
+    </table>
+
+    <p class="dim">
+      The Linux build needs glibc 2.38 or newer — Ubuntu 23.10, Debian 13,
+      Fedora 39 and later. On an older distribution, build from source; the
+      requirement comes from the machine these were built on, not from the code.
+    </p>
+
+    <h3>Verify what you downloaded</h3>
+    <p class="dim">
+      Checksums: <a href="/dl/SHA256SUMS">SHA256SUMS</a>.
+    </p>
+<pre><code>sha256sum -c SHA256SUMS --ignore-missing</code></pre>
+    <div class="note">
+      A checksum file served from the same host as the archive proves little:
+      whoever could replace one could replace the other. The same sums are
+      committed to the
+      <a href="https://github.com/gettessera-project/tessera/blob/main/SHA256SUMS">repository</a>,
+      so compare the two — they come from different places, and a mismatch is
+      the point.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>Build and run</h2>
 <pre><code>git clone https://github.com/gettessera-project/tessera
 cd tessera
